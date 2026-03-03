@@ -1,0 +1,28 @@
+stones:
+
+  basica:
+    material: EMERALD_BLOCK
+    itemsadder-id: ""
+    display-name: "§a§lPiedra Básica"
+    radio: 15
+    limite-por-jugador: 1
+    descripcion: "Protege un radio de 15 bloques."
+    permiso: "discordbridge.ps.usar.basica"
+
+  avanzada:
+    material: DIAMOND_BLOCK
+    itemsadder-id: ""
+    display-name: "§b§lPiedra Avanzada"
+    radio: 30
+    limite-por-jugador: 1
+    descripcion: "Protege un radio de 30 bloques."
+    permiso: "discordbridge.ps.usar.avanzada"
+
+  maestra:
+    material: NETHERITE_BLOCK
+    itemsadder-id: ""
+    display-name: "§5§lPiedra Maestra"
+    radio: 50
+    limite-por-jugador: 1
+    descripcion: "Protege un radio de 50 bloques."
+    permiso: "discordbridge.ps.usar.maestra"

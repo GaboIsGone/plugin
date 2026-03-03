@@ -1,0 +1,63 @@
+name: Vortex
+version: 1.0.27
+main: com.vortex.discordbridge.DiscordBridge
+api-version: 1.21
+author: Gabo
+description: Plugin oficial Vortex hardcore.
+
+depend:
+  - AuthMe
+  - LuckPerms
+  - ItemsAdder
+  - packetevents
+
+softdepend:
+  - PlaceholderAPI
+  - Vault
+  - PvPManager
+
+commands:
+  vincular:
+    description: Vincula tu cuenta de Minecraft con Discord
+    usage: /vincular
+  vidas:
+    description: Ver tus vidas actuales
+    usage: /vidas
+  darvidas:
+    description: Dar vidas a un jugador
+    usage: /darvidas <jugador> <cantidad>
+    permission: discordbridge.admin.vidas
+  setitemvidas:
+    description: Configurar items de vidas (una sola vez)
+    usage: /setitemvidas <extra|donar>
+    permission: discordbridge.admin.vidas
+  parkour:
+    description: Configurar parkour del abismo
+    usage: /parkour <setinicio|setcheckpoint|setfinal|info>
+    permission: discordbridge.admin.parkour
+  salirabismo:
+    description: Sacar a un jugador del abismo
+    usage: /salirabismo [jugador]
+    permission: discordbridge.admin.abismo
+  ps:
+    description: Comandos de protection stones
+    usage: /ps <lista|add|remove|miembros|transferir|ayuda>
+    permission: discordbridge.ps
+  vortex:
+    description: Comandos de administración
+    usage: /vortex <reload>
+    permission: discordbridge.admin.reload
+  clan:
+    description: Sistema de clanes
+    usage: /clan <crear|invitar|aceptar|rechazar|expulsar|colider|salir|info|lista|mejoras|prefijos|vidaauxiliar|disolver|estandarte>
+    permission: discordbridge.clan
+  verclan:
+    description: Ver el clan de un jugador
+    usage: /verclan [jugador]
+  cc:
+    description: Chat del clan
+    usage: /cc <mensaje>
+  clanfocus:
+    description: Monitorizar chat de un clan (staff)
+    usage: /clanfocus [id|nombre]
+    permission: discordbridge.clan.admin

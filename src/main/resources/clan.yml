@@ -1,0 +1,32 @@
+clan:
+  max-miembros-base: 3
+  precio-slot-miembro: 500.0      # precio base, escala con slots comprados
+  precio-slot-multiplicador: 1.5  # cada slot extra cuesta 1.5x más
+
+  estandarte:
+    radio-base: 10
+    mejoras:
+      zona-grande:
+        niveles: [20, 30]
+        precios: [1000.0, 2500.0]
+      explosiones:
+        precio: 2000.0
+      pvp:
+        precio: 1500.0
+      interacciones:
+        precio: 1500.0
+
+  vidas-auxiliares:
+    precio-mejora: 10000.0        # precio para desbloquear la mejora
+    precio-por-vida: 5000.0       # precio por cada vida auxiliar comprada
+
+  prefijos:
+    - id: "dragon"
+      display: "\uE001"
+      precio: 800.0
+    - id: "calavera"
+      display: "\uE002"
+      precio: 800.0
+    - id: "fuego"
+      display: "\uE003"
+      precio: 800.0

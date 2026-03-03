@@ -1,0 +1,52 @@
+# URL donde corre tu bot de Discord (Node.js)
+bot-url: "http://localhost:3000"
+
+# Clave secreta compartida entre plugin y bot
+api-secret: "Sz8mE1ZIK7joAAfWtGtq46lV5IYDbzxsW42JKrwPukOAQg8HT9iqYuBLrWcdBqhq"
+
+# Canal de Discord donde se envían alertas de seguridad
+alert-channel-id: "1461108499953094699"
+
+# Cuántos minutos dura un código de vinculación
+link-code-expiry-minutes: 10
+
+database:
+  path: "discordbridge.db"
+
+# ─── SISTEMA DE VIDAS ─────────────────────────────────────────────────
+vidas:
+  iniciales: 3
+  maximas: 5
+
+  rangos:
+    default:
+      maximas: 5
+      cooldown-vida-extra: 900
+      cooldown-donar: 900
+      distancia-donar: 50.0
+
+    tier1:
+      permiso: "discordbridge.vidas.tier1"
+      maximas: 6
+      cooldown-vida-extra: 600
+      cooldown-donar: 600
+      distancia-donar: 60.0
+
+    tier2:
+      permiso: "discordbridge.vidas.tier2"
+      maximas: 8
+      cooldown-vida-extra: 300
+      cooldown-donar: 300
+      distancia-donar: 75.0
+
+    tier3:
+      permiso: "discordbridge.vidas.tier3"
+      maximas: 10
+      cooldown-vida-extra: 120
+      cooldown-donar: 120
+      distancia-donar: 100.0
+
+# ─── ITEMS DE VIDAS ───────────────────────────────────────────────────
+items:
+  vida-extra: ""
+  donar-vida: ""
